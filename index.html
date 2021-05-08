@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIC Explorer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/css-doodle@0.15.3/css-doodle.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <css-doodle id="backdrop">
+        :doodle {
+            @grid: 12 / 100vmax; 
+        }
+        <!-- @random { border-top: 1px solid rgba(255, 187, 0, 0.80); } -->
+        <!-- @random { border-top: 1px solid darkslategrey;} -->
+        <!-- @random { border-top: 1px solid LemonChiffon;} -->
+        <!-- @random { border-top: 1px solid LightGoldenRodYellow;} -->
+        @random { border-top: 1px solid #FFE4B5;}
+    </css-doodle>
+
+    <h1>Check Out the <span class="work-title"></span> Works</h1>  
+    
+    <nav class="nav nav-color1">
+        <nav class="nav nav-color2">
+            <nav class="nav nav-white">
+                <button class="nav-btn close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <form class="form-container">
+                    <div class="form-group">
+                        <label>Number of Results</label>
+                        <input type="number" class="input" id="input-number" name="input-number" required placeholder="3">
+                    </div>
+                    <div class="form-group">
+                        <label>Search Term</label>
+                        <input type="text" class="input" id="input-search" name="input-search" required placeholder="Ruscha">
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-search">Search</button> 
+                    </div>
+                </form>
+            </nav>
+        </nav>
+    </nav>
+    <button class="nav-btn open-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="deck-container" id="deck-container"></div>
+
+    
+</body>
+</html>
+
