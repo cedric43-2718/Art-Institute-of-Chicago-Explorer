@@ -1,0 +1,15 @@
+{
+  "name": "aic_explorer",
+  "version": "1.0.0",
+  "description": "Explore the Chicago Institute of Art",
+  "main": "script-2.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Jason Rudokas",
+  "license": "ISC",
+  "homepage": "https://cedric43-2718.github.io/Art-Institute-of-Chicago-Explorer",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
